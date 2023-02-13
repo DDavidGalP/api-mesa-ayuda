@@ -129,7 +129,7 @@ public class UsuariosService implements IUsuariosService {
                 confirmationToken.setExpiresAt(LocalDateTime.now().plusMinutes(15));
                 confirmationToken.setUser(usuarios);
                 confirmationTokenService.saveConfirmationToken(confirmationToken);
-                String link = "http://localhost:8080/api-mesa-ayuda/auth/confirmToken?token=" + token;
+                String link = "http://containers-us-west-121.railway.app:7417/api-mesa-ayuda/auth/confirmToken?token=" + token;
                 String nombre = usuariosDTO.getNombres() + " " + usuariosDTO.getApellidos();
                 emailService.enviar(usuariosDTO.getEmail(), buildEmailService.buildEmail(nombre, link));
                 return usuariosDTO;
