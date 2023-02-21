@@ -24,19 +24,19 @@ public class ApplicationConfig {
                                 new SecurityScheme().type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")));
     }
 
-  /* @Bean
+   @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api-mesa-ayuda/")
-                 .allowedOrigins("*")
+                 .allowedOrigins("https://api-mesa-ayuda-production.up.railway.app")
                  .allowedMethods("GET", "POST", "PUT", "DELETE")
                  .maxAge(3600);
                  }
 
                  };
-                 }*/
+                 }
 
 
 
