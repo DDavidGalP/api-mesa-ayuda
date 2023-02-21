@@ -25,7 +25,7 @@ import javax.validation.Valid;
 import java.util.Date;
 
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = " *",  methods= {RequestMethod.GET,RequestMethod.POST,RequestMethod.DELETE ,RequestMethod.PUT},maxAge = 3600)
 @RestController
 @RequestMapping("/solicitudes")
 @RequiredArgsConstructor
