@@ -6,6 +6,8 @@ import io.swagger.v3.oas.models.security.SecurityScheme;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class ApplicationConfig {
@@ -21,6 +23,20 @@ public class ApplicationConfig {
                         .addSecuritySchemes("bearer-key",
                                 new SecurityScheme().type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")));
     }
+
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/api-mesa-ayuda/")
+                 .allowedOrigins("*")
+                 .allowedMethods("GET", "POST", "PUT", "DELETE")
+                 .maxAge(3600);
+                 }
+
+                 };
+                 }
 
 
 
