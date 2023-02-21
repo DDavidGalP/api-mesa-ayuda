@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@CrossOrigin(origins = " *",  methods= {RequestMethod.GET,RequestMethod.POST,RequestMethod.DELETE ,RequestMethod.PUT},maxAge = 3600)
+@CrossOrigin
 @RestController
 @RequestMapping("/dependencias")
 @RequiredArgsConstructor

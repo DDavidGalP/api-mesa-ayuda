@@ -26,7 +26,7 @@ import java.util.List;
  ** @Auth:ElenaM
  */
 
-@CrossOrigin(origins = " *",  methods= {RequestMethod.GET,RequestMethod.POST,RequestMethod.DELETE ,RequestMethod.PUT},maxAge = 3600)
+@CrossOrigin
 @RestController
 @RequestMapping("/estadosSolicitud")
 @RequiredArgsConstructor
