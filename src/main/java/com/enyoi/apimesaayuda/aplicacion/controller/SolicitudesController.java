@@ -25,7 +25,7 @@ import javax.validation.Valid;
 import java.util.Date;
 
 
-@CrossOrigin(originPatterns = "http://api-mesa-ayuda-production.up.railway.app")
+
 @RestController
 @RequestMapping("/solicitudes")
 @RequiredArgsConstructor

@@ -19,7 +19,7 @@ public class ApiMesaAyudaApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api-mesa-ayuda/**").allowedOrigins("http://api-mesa-ayuda-production.up.railway.app").allowedMethods("*").allowedHeaders("*");
+				registry.addMapping("/**").allowedOrigins("http://api-mesa-ayuda-production.up.railway.app").allowedMethods("*").allowedHeaders("*");
 			}
 		};
 	}

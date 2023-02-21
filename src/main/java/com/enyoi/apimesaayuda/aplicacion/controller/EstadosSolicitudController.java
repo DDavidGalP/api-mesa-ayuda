@@ -26,7 +26,7 @@ import java.util.List;
  ** @Auth:ElenaM
  */
 
-@CrossOrigin(originPatterns = "http://api-mesa-ayuda-production.up.railway.app")
+
 @RestController
 @RequestMapping("/estadosSolicitud")
 @RequiredArgsConstructor
