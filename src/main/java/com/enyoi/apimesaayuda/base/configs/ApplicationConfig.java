@@ -22,4 +22,6 @@ public class ApplicationConfig {
                                 new SecurityScheme().type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")));
     }
 
+
+
 }

@@ -26,7 +26,7 @@ import java.util.List;
  ** @Auth:ElenaM
  */
 
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "api-mesa-ayuda-production.up.railway.app", maxAge = 3600)
 @RestController
 @RequestMapping("/estadosSolicitud")
 @RequiredArgsConstructor
