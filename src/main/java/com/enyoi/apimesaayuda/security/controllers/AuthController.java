@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-@CrossOrigin(origins = "https://api-mesa-ayuda-production.up.railway.app", maxAge = 3600)
+@CrossOrigin(origins = "http://api-mesa-ayuda-production.up.railway.app/api-mesa-ayuda/", maxAge = 3600)
 
 @RestController
 @RequestMapping("/auth")
