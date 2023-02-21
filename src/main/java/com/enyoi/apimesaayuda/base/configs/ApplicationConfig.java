@@ -24,7 +24,7 @@ public class ApplicationConfig {
                                 new SecurityScheme().type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")));
     }
 
-    @Bean
+  /* @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
@@ -36,7 +36,7 @@ public class ApplicationConfig {
                  }
 
                  };
-                 }
+                 }*/
 
 
 
