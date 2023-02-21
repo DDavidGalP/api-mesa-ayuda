@@ -29,7 +29,7 @@ public class ApplicationConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api-mesa-ayuda/")
+                registry.addMapping("/api-mesa-ayuda/**")
                  .allowedOrigins("https://api-mesa-ayuda-production.up.railway.app")
                  .allowedMethods("GET", "POST", "PUT", "DELETE")
                  .maxAge(3600);
